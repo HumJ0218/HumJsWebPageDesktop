@@ -1,0 +1,5 @@
+此为 Lively Wallpaper 的插件
+
+请先到 https://livelywallpaper.net 下载主程序（Windows 非应用商店版）
+
+安装完成后将此压缩包（不要解压）拖入插件列表中即可使用

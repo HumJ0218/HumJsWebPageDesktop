@@ -1,0 +1,35 @@
+﻿<Window x:Class="HumJsWebPageDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HumJsWebPageDesktop"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        mc:Ignorable="d"
+        Title="HumJsWebPageDesktop" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <wv2:WebView2 
+                Name="webView" 
+                Source="about:blank" 
+                NavigationStarting="WebView_NavigationStarting" 
+                SourceChanged="WebView_SourceChanged" 
+                ContentLoading="WebView_ContentLoading" 
+                NavigationCompleted="WebView_NavigationCompleted" 
+                CoreWebView2InitializationCompleted="WebView_CoreWebView2InitializationCompleted"
+                WebMessageReceived="webView_WebMessageReceived"
+            />
+        </Grid>
+        <Grid>
+            <Label Content="Status" Name="StatusShadow1"  Margin="99,100,101,100" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Foreground="Black" />
+            <Label Content="Status" Name="StatusShadow2"  Margin="101,100,99,100" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Foreground="Black" />
+            <Label Content="Status" Name="StatusShadow3"  Margin="100,99,100,101" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Foreground="Black" />
+            <Label Content="Status" Name="StatusShadow4"  Margin="100,101,100,99" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Foreground="Black" />
+            <Label Content="Status" Name="StatusShadow5"  Margin="99,99,101,101" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Foreground="#66000000" />
+            <Label Content="Status" Name="StatusShadow6"  Margin="99,101,101,99" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Foreground="#66000000" />
+            <Label Content="Status" Name="StatusShadow7"  Margin="101,99,99,101" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Foreground="#66000000" />
+            <Label Content="Status" Name="StatusShadow8"  Margin="101,101,99,99" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" Foreground="#66000000" />
+            <Label Content="Status" Name="Status" Margin="100,100,100,100" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom"  Foreground="Yellow"  />
+        </Grid>
+    </Grid>
+</Window>

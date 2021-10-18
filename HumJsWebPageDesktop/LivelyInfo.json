@@ -1,0 +1,13 @@
+{
+  "AppVersion": "1.0.0.0",
+  "Title": "HumJ 的网页桌面",
+  "Thumbnail": "ph3icupn.jpg",
+  "Desc": "载入指定网页作为桌面背景，支持 JS 注入",
+  "Author": "HumJ",
+  "License": null,
+  "Contact": "https://humj.ink",
+  "Type": 0,
+  "FileName": "HumJsWebPageDesktop.exe",
+  "Arguments": null,
+  "IsAbsolutePath": false
+}
